@@ -1,0 +1,141 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: $em-base;
+    background: $site-background;
+    color: $font-color;
+    font-family: 'Univers Pro 55 Roman', 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 1em;
+    font-weight: normal;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+h1 {font-size: 26px;}
+h2 {font-size: 24px; }
+h3 {font-size: 20px;}
+h4 {font-size: 18px;}
+h5 {font-size: 16px;}
+h6 {font-size: 15px; font-weight: bold;}
+
+a {
+    text-decoration: none;
+    color: $link-color;
+    outline: 0;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+p {margin: 0 0 15px;}
+
+table {
+    margin-bottom: 2em;
+}
+
+td {
+    padding: 10px;
+}
+
+blockquote {
+    color: #666;
+    padding: 0 12px 0 40px;
+    margin: 12px 0 30px;
+}
+
+fieldset {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.styled-table {
+    width: 100%;
+
+    tr:nth-child(2n+1) td {
+        background: #f2f2f2;
+    }
+    td {
+        border-left: 1px solid #d9d9d9;
+    }
+    td:first-child {border-left: 0;}
+}
+
+.simple-button {
+    display: inline-block;
+    border: 1px solid  #999;
+    background: #fff;
+    padding: 8px 10px;
+    color: $font-color;
+    text-decoration: none;
+    margin: 0 12px 12px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+.left {float: left;}
+
+.right {float: right;}
+
+.column-title {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #d20019;
+    margin-bottom: 23px;
+    padding-top: 3px;
+
+    h1, h2, h3, h4 {
+        font-size: 22px;
+        margin: 0;
+        font-weight: normal;
+    }
+}
+
+.simple-list {
+    @extend %list-reset;
+    margin-bottom: 30px;
+    font-size: 14px;
+
+    li {
+        padding: 0;
+        margin-bottom: 15px;
+    }
+}
+
+%list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mainwrap {
+    width: 960px;
+    margin: 0 auto;
+    padding: 15px;
+    background: #acc;
+
+}
